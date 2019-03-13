@@ -101,3 +101,11 @@ stty sane
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 config config --local status.showUntrackedFiles no
+
+# download diff-so-fancy if not exists
+if [ ! -f ~/bin/diff-so-fancy ]; then
+        mkdir -p ~/bin
+        wget -O ~/bin/diff-so-fancy https://raw.githubusercontent.com/so-fancy/diff-so-fancy/master/third_party/build_fatpack/diff-so-fancy
+        chmod +x ~/bin/diff-so-fancy
+fi
+
