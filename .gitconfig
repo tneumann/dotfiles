@@ -1,0 +1,39 @@
+[user]
+	name = Thomas Neumann
+	email = neumann.thomas@gmail.com
+
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        interactive = auto
+        ui = true
+        pager = true
+
+[alias]
+        co = checkout
+        ci = commit
+        s = status --short
+        st = status
+        up = pull --rebase
+        di = diff
+        dic = diff --cached
+        dt = difftool --no-prompt
+
+[core]
+	excludesfile = /Users/loo/.gitignore_global
+	autocrlf = input
+	editor = vim
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[credential]
+	helper = cache
+[diff]
+	tool = gvimdiff
+[push]
+	default = simple
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
