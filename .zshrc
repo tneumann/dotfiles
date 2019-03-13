@@ -109,3 +109,7 @@ if [ ! -f ~/bin/diff-so-fancy ]; then
         chmod +x ~/bin/diff-so-fancy
 fi
 
+# ensure vim dirs are there
+mkdir -p .vim/dirs/tmp
+mkdir -p .vim/dirs/backups
+mkdir -p .vim/dirs/undos
