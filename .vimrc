@@ -91,7 +91,7 @@ endif
 if has("gui_running") && ! has("gui_macvim")
         " Orange curly underline for spell errors
         highlight SpellBad term=underline gui=undercurl guisp=Orange
-        set guifont=Inconsolata\ for\ Powerline\ Medium\ 12
+        set guifont=Inconsolata\ 12
 elseif has("gui_macvim")
         set guifont=Inconsolata\ for\ Powerline\ 13
 endif
