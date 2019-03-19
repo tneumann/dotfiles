@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+kernprof -l $* && python -m line_profiler `basename $1`.lprof
