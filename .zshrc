@@ -94,7 +94,7 @@ if [[ -f ~/.zshrc-${HOST//.*} ]] ; then
   source ~/.zshrc-${HOST//.*}
 fi
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/projects/bin:/usr/local/bin:$PATH
 
 stty sane
 
