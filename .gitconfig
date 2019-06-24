@@ -21,7 +21,7 @@
         dt = difftool --no-prompt
 
 [core]
-	excludesfile = /Users/loo/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	autocrlf = input
 	editor = vim
 	pager = diff-so-fancy | less --tabs=4 -RFX
@@ -29,6 +29,7 @@
 	helper = cache
 [diff]
 	tool = gvimdiff
+	submodule = log
 [push]
 	default = simple
 [difftool "sourcetree"]
@@ -37,3 +38,5 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[status]
+	submoduleSummary = true
