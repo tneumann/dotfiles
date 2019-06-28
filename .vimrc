@@ -167,6 +167,7 @@ nmap <a-j> :cn<CR>
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 autocmd FileType c,h,cpp,cuda setlocal expandtab cindent shiftwidth=4 tabstop=4 softtabstop=4 
 autocmd FileType cython setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 expandtab
 
 if has('gui_running')
   "let g:mayansmoke_cursor_line_visibility = 1
