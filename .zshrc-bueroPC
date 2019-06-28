@@ -1,1 +1,2 @@
 . /home/loo/miniconda3/etc/profile.d/conda.sh
+source ~/src/emsdk/emsdk_env.sh --build=Release > /dev/null
